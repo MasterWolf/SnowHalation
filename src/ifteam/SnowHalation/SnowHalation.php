@@ -78,7 +78,7 @@ class SnowHalation extends PluginBase implements Listener {
 	public function onChunkLoadEvent(ChunkLoadEvent $event) {
 		for($x = 0; $x < 16; ++ $x)
 			for($z = 0; $z < 16; ++ $z)
-				$event->getChunk ()->setBiomeId ( $x, $z, Biome::ICE_PLAINS );
+				$event->getChunk ()->setBiomeId ( $x, $z, Biome::TAIGA );
 	}
 	public function onPlayerJoinEvent(PlayerJoinEvent $event) {
 		$player = $event->getPlayer ();
